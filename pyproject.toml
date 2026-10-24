@@ -1,0 +1,18 @@
+[project]
+name = "projeto-web"
+version = "0.1.0"
+description = "Projeto acadêmico de Programação Web"
+requires-python = ">=3.11"
+dependencies = [
+    "fastapi[standard]",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["teste"]
+python_files = ["teste_*.py"]
+
+[tool.ruff]
+line-length = 88
+
+[tool.ruff.lint]
+select = ["E", "F", "I"]
